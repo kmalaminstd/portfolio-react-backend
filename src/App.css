@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.loader_container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadLoader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff5b;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, span, div, p{
+    margin: b;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.topnav{
+    background-color: #19af82;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 2px solid #fff;
+    position: fixed;
+    z-index: 99;
+}
+
+.topnav h1{
+    font-size: 25px;
+}
+
+.topnav button{
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.toggleBar{
+    cursor: pointer;
+}
+
+.sideBar{
+    width: 250px;
+    min-height: calc(100vh - 60px);
+    background-color: #19af82;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    transition: all linear 0.3s;
+}
+
+
+
+.nav_links{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.nav_links ul{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav_links ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+
+
+.nav_links ul li a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 10px;
+    transition: all linear 0.3s;
+}
+
+.nav_links ul li a:hover{
+    background-color: #4edbb1;
+    transition: all linear 0.3s;
+}
+
+.lgt_button{
+    width: 100%;
+}
+
+.lgt_button button{
+    width: 100%;
+    background-color: #222121;
+    border: 1px solid gray;
+    padding:20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+main{
+    width: calc(100vw - 250px);
+    margin: 0 auto;
+    padding: 0 30px;
+    float: right;
+    height: calc(100vh - 60px);
+}
+
+/* homepage css start */
+
+.common_page_head{
+    padding-top: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.common_page_head h1{
+    font-size: 25px;
+}
+
+.homeLink ul{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.homeLink ul li a{
+    display: block;
+    padding: 30px 50px;
+    background-color: #19af82;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* homepage css end */
+
+/* add item css start */
+
+.add_form {
+    margin: 50px auto;
+    width: 80%;
+    padding: 50px 10px;
+    background-color: rgba(26, 175, 175, 0.1); /* Transparent white background */
+    backdrop-filter: blur(20px); /* Blur effect for glass look */
+    border-radius: 15px; /* Rounded corners for a smoother look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for emphasis */
+}
+
+.add_form form {
+    width: 100%;
+}
+
+.add_form form input, .add_form textarea, .add_form select {
+    width: 100%;
+    margin-bottom: 30px;
+    outline: none;
+    border: 1px solid #4edbb1;
+    padding: 8px 15px;
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Blur effect */
+    color: #000000; /* Text color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.add_form select {
+    cursor: pointer;
+}
+
+.add_form form input{
+    padding: 15px;
+}
+
+.add_form textarea {
+    height: 200px;
+    resize: none;
+    
+}
+
+.jodit-react-container{
+    margin-bottom: 30px;
+}
+
+.add_form form input::placeholder {
+    color: rgba(0, 0, 0, 0.966); /* Lighter placeholder text */
+}
+
+.add_form form button{
+    width: 100%;
+    background-color: rgba(25, 175, 130, 0.459);
+    backdrop-filter: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.add_form form button:hover{
+    background-color: rgba(25, 175, 130, 0.651);
+}
+
+/* add item css end */
+
+/* all item css start */
+
+.item-table{
+    margin-top: 50px;
+}
+
+.item-table table{
+    border-collapse: collapse;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.item-table table tr{
+    border-bottom: 1px solid lightgray;
+}
+
+.item-table table tr th{
+    border-left: 1px solid lightgray;
+}
+
+.item-table table tr th:first-child{
+    border-left: none;
+}
+
+.item-table table tr th, .item-table tr td{
+    padding: 8px 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.item-table img{
+    height: 100px;
+    width: auto;
+}
+
+.item-table table button{
+    border: none;
+    background-color: transparent;
+    margin-left: 30px;
+}
+
+.item-table table tbody tr td{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.item-table table tbody tr:hover{
+    background-color: lightgray;
+}
+
+/* all item css end */
+
+/* login form css start */
+
+.login_form_page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #19af82;
+}
+
+.login_form{
+    height: auto;
+    padding: 30px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(20px);
+}
+
+.login_form h3{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 25px;
+    color: #fff;   
+}
+
+.login_form form input {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 8px 19px;
+    font-size: 17px;
+}
+
+.login_form form button{
+    background-color: rgb(17, 131, 202);
+    padding: 8px 23px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+/* login form css end */
+
+
+/* responsive query */
+
+@media screen and (max-width: 768px){
+    .sideBar.sideBarToggle{
+        left: -250px;
+        transition: all linear 0.3s;
+    }
+}
+
+/* responsive query */
