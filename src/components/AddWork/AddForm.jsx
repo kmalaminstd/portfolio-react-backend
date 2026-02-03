@@ -125,6 +125,8 @@ function AddForm() {
                     <option value="webdesign">Web Design</option>
                     <option value="react">React.js</option>
                     <option value="js">Javascript</option>
+                    <option value="laravel">Laravel</option>
+                    <option value="reactlaravel">React + Laravel</option>
                 </select>
                 <JoditEditor
                     ref={editor}
